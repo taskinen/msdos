@@ -1,0 +1,17 @@
+pushover:
+  user: my-pushover-user-key
+  api_token: my-pushover-api-token
+
+services:
+
+  my-example-service:
+    checks:
+      http:
+        url: http://www.example.com
+        response: 200
+
+  my-another-example-service:
+    checks:
+      http:
+        url: http://www.example.org
+        response: 200
